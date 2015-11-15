@@ -1,0 +1,16 @@
+<html>
+<center><img src="/static/rbtx.png"></center>
+<body>
+<h2><center>Enter Score</center></h2>
+<form name="input" action="/scoreprocess/" method="get">
+Team ID(only number):<SELECT name="id">
+{% for a in filtered %}
+<OPTION VALUE="{{a.id}}">{{a.id}}</OPTION>
+{% endfor %}
+</SELECT>
+Enter Score:<input type="number" name="score"><br>
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

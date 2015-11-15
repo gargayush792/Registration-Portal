@@ -1,0 +1,12 @@
+<html>
+<center><img src="/static/rbtx.png"></center>
+<body>
+<h2><center>Login</center></h2>
+<form name="input" action="/log/" method="post">
+{% csrf_token %}
+Username:<input type="text" name="user"><br>
+Password:<input type="password" name="pass"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<center><img src="/static/rbtx.png"></center>
+<body>
+<h2><center>TRANSPORTER SCORESHEET FORM</center></h2>
+<form name="input" action="/scoreprocess/" method="get">
+Team ID(only number):<input type = "number" name = "id">
+<h4>To be Added</h4><br>
+Alloted Run Time (in Sec):<input type="number" name="allotedruntime"><br>
+Run time taken(in Sec):<input type="number" name="runtimetaken"><br>
+Number of voids filled without extended helpers:<input type="number" name="voidsfwe"><br>
+Number of voids filled with extended helpers: <input type = "number" name = "voidsfe"> <br>
+<h4>To be Subtracted</h4><br>
+Number of steps taken:<input type="number" name="steps"><br>
+Number of voids crossed:<input type="number" name="voidsc"><br>
+Timeouts:<input type="number" name="timeouts"><br>
+Restarts:<input type="number" name="restarts"><br>
+Remarks:<input type="text" name="remarks"><br>
+	<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

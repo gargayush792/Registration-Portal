@@ -1,0 +1,51 @@
+<table border="1">
+    <tr>
+        <th>TEAM ID</th>
+        <th>Name 1</th>
+        <th>Email 1</th>
+        <th>Phone 1</th>
+        <th>College 1</th>
+        <th>Name 2</th>
+        <th>Email 2</th>
+        <th>Phone 2</th>
+        <th>College 2</th>
+        <th>Name 3</th>
+        <th>Email 3</th>
+        <th>Phone 3</th>
+        <th>College 3</th>
+        <th>Name 4</th>
+        <th>Email 4</th>
+        <th>Phone 4</th>
+        <th>College 4</th>
+        <th>Round 1</th>
+        <th>Round 2</th>
+        <th>Round 3</th>
+        <th>Address</th>
+    </tr>
+    {% for item in query_results %}
+    <tr> 
+        <td>{{ item.team_id }}</td>
+        <td>{{ item.name1 }}</td>
+        <td>{{ item.email1 }}</td>
+        <td>{{ item.phone1 }}</td>
+        <td>{{ item.college1 }}</td>
+        <td>{{ item.name2 }}</td>
+        <td>{{ item.email2 }}</td>
+        <td>{{ item.phone2 }}</td>
+        <td>{{ item.college2 }}</td>
+        <td>{{ item.name3 }}</td>
+        <td>{{ item.email3 }}</td>
+        <td>{{ item.phone3 }}</td>
+        <td>{{ item.college3 }}</td>
+        <td>{{ item.name4 }}</td>
+        <td>{{ item.email4 }}</td>
+        <td>{{ item.phone4 }}</td>
+        <td>{{ item.college4 }}</td>
+        <td>{{ item.round1 }}</td>
+        <td>{{ item.round2 }}</td>
+        <td>{{ item.round3 }}</td>
+        <td>{{ item.address }}</td>
+        
+    </tr>
+    {% endfor %}
+</table>

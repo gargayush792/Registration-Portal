@@ -1,0 +1,25 @@
+<html>
+<center><img src="/static/rbtx.png"></center>
+<body>
+<h2><center>TREMORS SCORESHEET FORM</center></h2>
+<form name="input" action="/scoreprocess/" method="get">
+Team ID(only number):<input type = "number" name = "id">
+<h4>To be Added</h4><br>
+Alloted Run Time (in Sec):<input type="number" name="allotedruntime"><br>
+Victims saved:<input type="number" name="saved"><br>
+Run time taken(in Sec):<input type="number" name="runtimetaken"><br>
+<h4>To be Subtracted</h4><br>
+Number of switched off light source hits:<input type="number" name="solshits"><br>
+Number of wall hits:<input type="number" name="wallhits"><br>
+Number of times entered innermost circle:<input type="number" name="enteredic"><br>
+Number of times hit 2nd circle:<input type="number" name="hitsecondc"><br>
+Number of times hit 3rd circle:<input type="number" name="hitthirdc"><br>
+Number of cross over:<input type="number" name="crossover"><br>
+Timeouts:<input type="number" name="timeouts"><br>
+Restarts:<input type="number" name="restarts"><br>
+Remarks:<input type="text" name="remarks"><br>
+	<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

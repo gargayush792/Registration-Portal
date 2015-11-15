@@ -1,0 +1,32 @@
+from django.db import models
+
+class Details(models.Model):
+	name1 = models.CharField(max_length=70, null=False)
+	email1 = models.CharField(max_length=70, null=False)
+	phone1 = models.CharField(max_length=13, null=False)
+	college1 = models.CharField(max_length=100, null=False)
+	name2 = models.CharField(max_length=70, null=True)
+	email2 = models.CharField(max_length=70,null=True)
+	phone2 = models.CharField(max_length=13, null=True)
+	college2 = models.CharField(max_length=100, null=True)
+	name3 = models.CharField(max_length=70, null=True)
+	email3 = models.CharField(max_length=70, null=True)
+	phone3 = models.CharField(max_length=13, null=True)
+	college3 = models.CharField(max_length=100, null=True)
+	name4 = models.CharField(max_length=70, null=True)
+	email4 = models.CharField(max_length=70, null=True)
+	phone4 = models.CharField(max_length=13, null=True)
+	college4 = models.CharField(max_length=100, null=True)
+	address = models.CharField(max_length=500)
+	team_name = models.CharField(max_length=70)
+	event = models.CharField(max_length=20)
+	team_id = models.BigIntegerField(null=True)
+	round1 = models.BigIntegerField(null=True)
+	round2 = models.BigIntegerField(null=True)
+	round3 = models.BigIntegerField(null=True)
+	present_round = models.IntegerField(null=True)
+	certificate = models.CharField(max_length=20)
+	score_person = models.CharField(max_length=30)
+	
+	def __unicode__(self):
+		return u'%s %s' % (self.event, self.team_id)
